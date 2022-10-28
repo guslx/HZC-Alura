@@ -223,7 +223,15 @@ body {
     width: 100%;
     border-radius: 15px;
     overflow: hidden;
-    background-color: #2c343a
+    background-color: #2c343a;
+}
+
+.cartao-nolist {
+    cursor: pointer;    
+}
+
+.cartao-nolist:hover {
+    background-color: #252b30 ;
 }
 
 .cartao__imagem--desktop {
@@ -232,6 +240,10 @@ body {
 
 .cartao--destaque {
     margin-bottom: 16px;
+}
+
+.cartao--destaque:hover {
+    background-color: #252b30;
 }
 
 .cartao-conteudo {
@@ -374,6 +386,7 @@ justify-self: flex-end;
         font-size: .9rem;
         line-height: 1.2rem;
         font-weight: 700;
+        cursor: pointer;
     }
 
     .cartao__item-perfil {
@@ -385,6 +398,14 @@ justify-self: flex-end;
     .videos-recentes li:last-child {
         margin-bottom: 56px;
     }
+
+    .cartao__botao {
+        cursor: pointer;
+    }
+
+    .cartao__botao:hover {
+        background-color: #035591 ;
+    }    
 
     .cartao__botao--destaque {
         grid-column: auto;
@@ -427,5 +448,37 @@ justify-self: flex-end;
 
     .secao-produtos {
         grid-area: secao-produtos;
+    }
+}
+
+/* css da página de picos abaixo */
+
+.cartao__imagem--picos {
+    
+    overflow: hidden;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.cartao__botao--picos::before {
+    content: "\e908";
+    font-size: 24px;
+}
+
+@media screen and (min-width: 1360px) {
+    .titulo-pagina--picos {
+        grid-column: span 4;
+    }
+
+    .picos-destaque {
+        width: 100%;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .picos-favoritos li:last-child {
+        margin-bottom: 0px;
     }
 }
